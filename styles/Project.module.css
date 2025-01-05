@@ -1,0 +1,79 @@
+.backButton {
+    flex-wrap: left;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    width: 60px;
+    height: 60px;
+}
+
+.backButton svg {
+  width: 30px;
+  height: 30px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+.contents {
+    flex-wrap: wrap;
+    margin: 15px;
+    float: right;
+}
+
+.title {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 3.6rem;
+  padding-bottom: 30px;;
+}
+
+.title {
+  text-align: center;
+}
+
+.title,
+.description,
+.subtitle {
+  text-align: center;
+}
+
+.twoColumns {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    max-width: 1000px;
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+    .grid,
+    .contents {
+      width: 100%;
+      flex-direction: column;
+    }
+}
