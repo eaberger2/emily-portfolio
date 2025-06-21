@@ -2,7 +2,6 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
-import profilePhoto from '../images/profile_photo.JPG';
 import Header from '../components/header.js';
 
 export default function AboutMe() {
@@ -20,8 +19,8 @@ export default function AboutMe() {
               <div className={styles.contents}>
                 <ul>
                     <li>emily.a.berger52@gmail.com</li>
-                    <li><a href="https://www.linkedin.com/in/emily-a-berger/">linkedin/in/emily-a-berger</a></li>
-                    <li><a href="https://github.com/eaberger2">github.com/eaberger2</a></li>
+                    <li><Link href="https://www.linkedin.com/in/emily-a-berger/" to="route" target="_blank" rel="noopener noreferrer">linkedin/in/emily-a-berger</Link></li>
+                    <li><Link href="https://github.com/eaberger2" to="route" target="_blank" rel="noopener noreferrer">github.com/eaberger2</Link></li>
                 </ul>
               </div>
               <h2>

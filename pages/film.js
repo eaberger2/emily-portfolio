@@ -1,13 +1,9 @@
-import Header from '../components/header.js';
-import styles from '../styles/Home.module.css';
-import Image from 'next/image';
 import { useEffect, useState } from "react";
 import { storage } from "../helpers/firebase.js";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
 
 export default function FilmPage(){
   
-  const imageName = "R1-09222-0014.JPG";
   const [images, setImages] = useState([]);
 
   useEffect(() => {
