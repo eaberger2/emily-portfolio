@@ -3,55 +3,16 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import profilePhoto from '../images/profile_photo.JPG';
-//npm run dev
+import Header from '../components/header.js';
+
 export default function AboutMe() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Emily Berger's Portfolio</title>
-        <link rel="icon" href="/laptop.ico" />
-      </Head>
-
-      <main>
-        <h1 className={styles.title}>
-          Hello.
-        </h1>
-        <h1 className={styles.title}>
-          I'm Emily Berger
-        </h1>
-        <h1 className={styles.subtitle}>*a student and coder looking to start her journey as a software engineer :)</h1>
-        <div className={styles.navbar}>
-        <ul>
-          <li>
-          <Link href="/">
-            Projects
-          </Link>
-          </li>
-          <li className={styles.bold}>
-          <Link href="/about-me">
-            About Me
-          </Link>
-          </li>
-        </ul>
-        </div>
         <div className={styles.grid}>
-          <Image
-            src={profilePhoto}
-            alt="Profile Photo"
-            width={300}
-            height={200}
-          />
-
           <div className={styles.contents}>
-              <p>I am a senior at the University of Wisconsin-Madison studying Computer Science and Data Science.
-                  In school, I have especially enjoyed learning about operating systems, data structures, and efficient algorithms.
-                  Currently, I am taking a database management systems course and an intro to cryptography course; both have been
-                  really interesting so far! As a college senior, I am actively seeking full-time Software Engineering roles for the
-                  summer of 2024. I am passionate about optimizing systems with code and I hope to work on unique and interesting 
-                  problems in the technology industry.
-              </p>
-              <p>
-                In my free time, I enjoy rock climbing, painting, coding stuff like this portfolio, crossing off movies on my IMDb Top 100 poster, playing Smoothie Moves on Webkinz, and trying to solve the nyt mini crossword!
+              <p style={{padding: 10}}>I am a software engineer based in Madison, Wisconsin. I recently graduated from the University of Wisconsin-Madison
+              with a BA in Computer Science and Data Science. I hope to use this portfolio to display some of the creative parts of
+              my life including photography, painting, and coding projects.
               </p>
               <h2>
                   Contact Me
@@ -64,19 +25,20 @@ export default function AboutMe() {
                 </ul>
               </div>
               <h2>
-                Skills
-              </h2>
-              <div className={styles.contents}>
-                <ul>
-                  <li><b>Languages:</b> Java, Python, C, SQL, JavaScript, HTML/CSS</li>
-                  <li><b>Frameworks:</b> React, Node.js, JUnit, SpringBoot, Flask</li>
-                  <li><b>Developer Tools:</b> Git, Docker, VSCode, Eclipse, Jupyter Notebook</li>
-                  <li><b>Libraries:</b> pandas, NumPy, Matplotlib, scikit-learn</li>
-                </ul>
-              </div>
-              <h2>
                 Experience
               </h2>
+              <h4>Entegral <i className={styles.notbold}>Software Engineer 1</i></h4>
+              <p>June 2024 - Current</p>
+              <div className={styles.contents}>
+                <ul>
+                  <li>
+                    Maintain a variety of applications including Spring Boot APIs, Ivy APIs, Angular UIs, and Apache Wicket UIs.
+                  </li>
+                  <li>
+                    Work with docker, kubernetes, and the Google Cloud Platform to deploy applications.
+                  </li>
+                </ul>
+              </div>
               <h4>Entegral <i className={styles.notbold}>Software Developer Intern</i></h4>
               <p>May 2023 - August 2023</p>
               <div className={styles.contents}>
@@ -142,40 +104,6 @@ export default function AboutMe() {
               </div>
           </div>
       </div>
-      </main>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
     </div>
   )
 }
