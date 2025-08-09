@@ -49,7 +49,7 @@ export default function AboutMe() {
                     Wrote a combined 40 JUnit and integration tests to thoroughly test the new API
                   </li>
                   <li>
-                    Analyzed a Python machine learning program and identified areas of improvement to train a more accurate classification mode
+                    Analyzed a Python machine learning program and identified areas of improvement to train a more accurate classification model
                   </li>
                   <li>
                     Used helm charts and kubernetes to set up Google Cloud Storage buckets and queries in BigQuery
