@@ -1,18 +1,11 @@
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
-import Header from '../components/header.js';
 
 export default function AboutMe() {
   return (
     <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.contents}>
-              <p style={{padding: 10}}>I am a software engineer based in Madison, Wisconsin. I recently graduated from the University of Wisconsin-Madison
-              with a BA in Computer Science and Data Science. I hope to use this portfolio to display some of the creative parts of
-              my life including photography, painting, and coding projects.
-              </p>
               <h2>
                   Contact Me
               </h2>
@@ -21,6 +14,7 @@ export default function AboutMe() {
                     <li>emily.a.berger52@gmail.com</li>
                     <li><Link href="https://www.linkedin.com/in/emily-a-berger/" to="route" target="_blank" rel="noopener noreferrer">linkedin/in/emily-a-berger</Link></li>
                     <li><Link href="https://github.com/eaberger2" to="route" target="_blank" rel="noopener noreferrer">github.com/eaberger2</Link></li>
+                    <li><Link href="https://open.spotify.com/user/emberg547?si=7af5183fd99445bf" to="route" target="_black" rel="noopener noreferrer">spotify.com/emberg547</Link></li>
                 </ul>
               </div>
               <h2>

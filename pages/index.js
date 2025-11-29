@@ -4,7 +4,6 @@ import Link from 'next/link';
 import CodePage from './code.js';
 import Header from '../components/header.js';
 
-//npm run dev
 export default function Home() {
   return (
     <div className={styles.container}>

@@ -17,19 +17,24 @@ export default function Header(){
             <div className={styles.navbar}>
                 <ul style={{textAlign: "center"}}>
                   <li>
-                  <Link href="/">
-                    Code
-                  </Link>
+                    <Link href="/">
+                      Code
+                    </Link>
                   </li>
                   <li>
-                  <Link href="/film">
-                    Film
-                  </Link>
+                    <Link href="/film">
+                      Film
+                    </Link>
                   </li>
                   <li>
-                  <Link href="/about-me">
-                    About Me
-                  </Link>
+                    <Link href="/music">
+                      Music
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about-me">
+                      About Me
+                    </Link>
                   </li>
                 </ul>
             </div>
