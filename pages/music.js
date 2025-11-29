@@ -25,9 +25,10 @@ export default function MusicPage(){
   if (!music) return <p className={styles.tracksTitle}>Loading…</p>;
 
   return (
-    <div className={styles.tracks}>
+    <div className={styles.container}>
         {music.map(([month, tracks]) => (
             <MonthTracks key={month} month={month} tracks={tracks} />
+            
         ))}
     </div>
     
