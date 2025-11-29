@@ -4,7 +4,6 @@ import Link from 'next/link';
 export default function AboutMe() {
   return (
     <div className={styles.container}>
-        <div className={styles.grid}>
           <div className={styles.contents}>
               <h2>
                   Contact Me
@@ -96,7 +95,6 @@ export default function AboutMe() {
                 </ul>
               </div>
           </div>
-      </div>
     </div>
   )
 }

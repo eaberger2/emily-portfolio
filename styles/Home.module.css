@@ -165,28 +165,16 @@
   }
 }
 
-.tracks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .tracksTitle {
   margin-top: 20px;
   font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .track iframe {
   width: 700;
   border-radius: 12px;
-}
-
-@media (max-width: 600px) {
-  .track {
-    width: 100%;
-  }
 }

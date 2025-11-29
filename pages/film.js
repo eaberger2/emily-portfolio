@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { storage } from "../helpers/firebase.js";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
+import styles from '../styles/Home.module.css';
 
 export default function FilmPage(){
   
@@ -18,7 +19,7 @@ export default function FilmPage(){
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: "center"}}>
         {film.map((url, i) => (
           <img key={i} src={url} alt={`img-${i}`} width={400} style={{ margin: 10 }} />
