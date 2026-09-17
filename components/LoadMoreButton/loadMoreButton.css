@@ -1,0 +1,91 @@
+.load-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  padding: 16px 32px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    #5b9f8b,
+    #408873
+  );
+
+  color: #ffffff;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 12px rgba(64, 136, 115, 0.2),
+    0 8px 24px rgba(64, 136, 115, 0.1);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+/* Hover Effect */
+.load-more-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+
+  background: linear-gradient(
+    135deg,
+    #408873,
+    #32745f
+  );
+
+  box-shadow:
+    0 6px 16px rgba(64, 136, 115, 0.3),
+    0 12px 30px rgba(64, 136, 115, 0.15);
+}
+
+/* Click Effect */
+.load-more-btn:active:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+/* Arrow */
+.arrow {
+  font-size: 22px;
+  line-height: 1;
+
+  transition: transform 0.2s ease;
+}
+
+.load-more-btn:hover .arrow {
+  transform: translateY(4px);
+}
+
+/* Loading State */
+.load-more-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner {
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+
+  border-radius: 50%;
+
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
