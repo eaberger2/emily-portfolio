@@ -19,7 +19,7 @@ export default function AboutMe() {
               <h2>
                 Experience
               </h2>
-              <h4>Entegral <i className={styles.notbold}>Software Engineer 1</i></h4>
+              <h4>Entegral <i className={styles.notbold}>Software Engineer 2</i></h4>
               <p>June 2024 - Current</p>
               <div className={styles.contents}>
                 <ul>
